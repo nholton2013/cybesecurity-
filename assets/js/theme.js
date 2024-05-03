@@ -1,27 +1,3 @@
-/*-----------------------------------------------------------------------------------
-    Template Name: Vedhak - Adventure Tours and Travel HTML Template
-    Template URI: site.com
-    Description: Vedhak is a modern Adventure Tours and Travel HTML Template designed for all activities, sports, hiking, or outdoor adventures.
-    Author: WebTend 
-    Author URI: https://webtend.net/
-    Version: 1.0
-
-    Note: This is Main Js file
------------------------------------------------------------------------------------
-    Js INDEX
-    ===================
-    ## Main Menu
-    ## Document Ready
-    ## Preloader
-    ## Sticky
-    ## Back to top
-    ## Counter
-    ## Magnific-popup js
-    ## Nice select
-    ## Slick Slider
-    ## Isotope JS
-    ## Price Ranger js
------------------------------------------------------------------------------------*/
 
 (function($) {
     'use strict';

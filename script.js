@@ -1,101 +1,94 @@
 // Array of words with their corresponding hints
 
-let words = [
+
     // Each object represents a word and its hint
-    {
-      word: "addition",
-      hint: "The process of adding numbers"
-    },
-    {
-      word: "meeting",
-      hint: "Event in which people come together"
-    },
-    {
-      word: "number",
-      hint: "Math symbol used for counting"
-    },
-    {
-      word: "exchange",
-      hint: "The act of trading"
-    },
-    {
-      word: "canvas",
-      hint: "Piece of fabric for oil painting"
-    },
-    {
-      word: "garden",
-      hint: "Space for planting flower and plant"
-    },
-    {
-      word: "position",
-      hint: "Location of someone or something"
-    },
-    {
-      word: "feather",
-      hint: "Hair like outer covering of bird"
-    },
-    {
-      word: "comfort",
-      hint: "A pleasant feeling of relaxation"
-    },
-    {
-      word: "tongue",
-      hint: "The muscular organ of mouth"
-    },
-    {
-      word: "expansion",
-      hint: "The process of increase or grow"
-    },
-    {
-      word: "country",
-      hint: "A politically identified region"
-    },
-    {
-      word: "group",
-      hint: "A number of objects or persons"
-    },
-    {
-      word: "taste",
-      hint: "Ability of tongue to detect flavour"
-    },
-    {
-      word: "store",
-      hint: "Large shop where goods are traded"
-    },
-    {
-      word: "field",
-      hint: "Area of land for farming activities"
-    },
-    {
-      word: "friend",
-      hint: "Person other than a family member"
-    },
-    {
-      word: "pocket",
-      hint: "A bag for carrying small items"
-    },
-    {
-      word: "needle",
-      hint: "A thin and sharp metal pin"
-    },
-    {
-      word: "expert",
-      hint: "Person with extensive knowledge"
-    },
-    {
-      word: "statement",
-      hint: "A declaration of something"
-    },
-    {
-      word: "second",
-      hint: "One-sixtieth of a minute"
-    },
-    {
-      word: "library",
-      hint: "Place containing collection of books"
-    }
-  ];
-  
+    let words = [
+      {
+        word: "phishing",
+        hint: "Fraudulent attempt to obtain sensitive information by disguising as a trustworthy entity in electronic communication"
+      },
+      {
+        word: "malware",
+        hint: "Malicious software designed to disrupt, damage, or gain unauthorized access to computer systems"
+      },
+      {
+        word: "firewall",
+        hint: "Network security system that monitors and controls incoming and outgoing traffic based on predetermined security rules"
+      },
+      {
+        word: "encryption",
+        hint: "Process of converting data into a format that can only be read or deciphered by authorized parties"
+      },
+      {
+        word: "two-factor authentication",
+        hint: "Security process that requires two forms of identification before granting access to a system or account"
+      },
+      {
+        word: "data breach",
+        hint: "Unauthorized access, disclosure, or exposure of sensitive information"
+      },
+      {
+        word: "cyberattack",
+        hint: "Deliberate exploitation of computer systems, networks, or devices to compromise data or disrupt operations"
+      },
+      {
+        word: "vulnerability",
+        hint: "Weakness or flaw in a system that could be exploited by attackers to compromise security"
+      },
+      {
+        word: "ransomware",
+        hint: "Type of malware that encrypts data and demands payment for its release"
+      },
+      {
+        word: "authentication",
+        hint: "Process of verifying the identity of a user or system"
+      },
+      {
+        word: "intrusion detection",
+        hint: "Monitoring and analyzing network traffic to detect and respond to unauthorized activity"
+      },
+      {
+        word: "cyber hygiene",
+        hint: "Practices and measures implemented to maintain cybersecurity and prevent attacks"
+      },
+      {
+        word: "social engineering",
+        hint: "Psychological manipulation of individuals to gain confidential information or access to systems"
+      },
+      {
+        word: "zero-day exploit",
+        hint: "Vulnerability or weakness in software that is unknown to the software developer"
+      },
+      {
+        word: "patch",
+        hint: "Software update designed to fix security vulnerabilities or improve functionality"
+      },
+      {
+        word: "phishing",
+        hint: "Fraudulent attempt to obtain sensitive information by disguising as a trustworthy entity in electronic communication"
+      },
+      {
+        word: "endpoint security",
+        hint: "Protection of devices or endpoints such as computers, smartphones, and tablets from cyber threats"
+      },
+      {
+        word: "security audit",
+        hint: "Systematic evaluation of an organization's security policies, procedures, and controls"
+      },
+      {
+        word: "access control",
+        hint: "Mechanism or process to regulate who or what can view or use resources in a computing environment"
+      },
+      {
+        word: "incident response",
+        hint: "Structured approach to addressing and managing the aftermath of a security breach or cyberattack"
+      },
+      {
+        word: "threat intelligence",
+        hint: "Information about potential or current threats that can be used to inform cybersecurity decisions and defenses"
+      }
+    ];
+    
   const wordText = document.querySelector(".word"),
     hintText = document.querySelector(".hint span"),
     timeText = document.querySelector(".time b"),
@@ -148,3 +141,7 @@ let words = [
   // Event listeners for the refresh and check buttons
   refreshBtn.addEventListener("click", initGame);
   checkBtn.addEventListener("click", checkWord);
+
+  $(window).on('load', function (event) {
+    $('.preloader').delay(500).fadeOut('500');
+  })
